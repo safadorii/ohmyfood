@@ -6,27 +6,30 @@
     <script src="https://kit.fontawesome.com/8f2991717e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="./sass/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
     <title>Accueil - Ohmyfood</title>
 </head>
 
 <body>    
-    <header>        
+    <header class="header">  
+        <div class="header__logo">
             <img src="/Users/aliayeb/Desktop/projet4/assets/Images /logo/ohmyfood@2x.svg" alt="ohmyfood logo" >
+        </div>
     </header >
      <main>
-            <form  class="" method="get" action="#" >            
-                <i class="fa-solid fa-location-dot "></i>
-                <input type="search" class="" placeholder="Paris, Belleville">            
-            </form>
-                    <div >                
-                        <h1>Réservez le menu qui vous convient</h1>
-                        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-                    </div>
-                    <button>
-                        <span> explorer nos restaurants</span>
-                    </button> 
+            <section class="localisation">            
+                <i class="fa-solid fa-location-dot localisation__icone"></i>
+                <h2 class=" localisation__text">Paris, Belleville</h2>            
+            </section>
+                    <section class="apropos" >                
+                        <h1 class="apropos__titre">Réservez le menu qui vous convient</h1>
+                        <p class="apropos__soustitre">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+                        <button>
+                            <span> explorer nos restaurants</span>
+                        </button> 
+                    </section>
+                    
         <section>
             <h2>Fonctionnement</h2>
             <ol>

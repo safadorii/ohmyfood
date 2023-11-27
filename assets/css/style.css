@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+.header__logo {
+  width: 350px;
+  height: 100px;
+}/*# sourceMappingURL=main.css.map */

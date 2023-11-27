@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 2px 0px 1px rgba(0, 0, 0, 0.15);
+}
+.header__logo {
+  position: relative;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: #eaeaea;
+  padding: 20px;
+}
+.localisation__icone {
+  color: #353535;
+  margin-right: 10px;
+}
+.localisation__text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #353535;
+  margin: 0px;
+}
+
+.apropos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.apropos__titre {
+  font-size: 24px;
+  text-align: center;
+}
+.apropos__soustitre {
+  font-size: 18px;
+  font-weight: 300;
+  color: #353535;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
