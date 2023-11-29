@@ -5,10 +5,58 @@ body{
 .header{
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding-top: 20px;
     width: 100%;
     box-shadow: 2px 0px 1px  rgba(0, 0, 0, 0.15) ;
     &__logo {
     position: relative;
     }
 } 
+@mixin button{
+   
+    background: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
+    padding: 15px;
+    border: #9747FF;
+    top: 50px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px 0px #00000040;
+    cursor: pointer;
+&:hover{ 
+    box-shadow: 0px 4px 10px 0px #00000080;
+    background:linear-gradient(0deg, #9356DC -11.44%, #FF79DA 90.93%);
+}    
+}
+.footer{
+    background-color:#353535 ;
+    padding: 25px;
+    &__titre{
+        font-size: 18px;
+        font-weight: 400;
+        font-style: italic;
+        color: white;
+        font-family:Shrikhand;
+        margin: 0px;
+    }
+    &__listes{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        list-style:none;
+        padding: 0px;
+    }
+    &__liste{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    &__text{
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+    &__icone{
+        color: white;
+    }
+}
