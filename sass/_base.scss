@@ -29,6 +29,10 @@ body{
 .footer{
     background-color:#353535 ;
     padding: 25px;
+    @media (min-width:786px){
+        display: flex;
+        justify-content: center;
+    }
     &__titre{
         font-size: 18px;
         font-weight: 400;
@@ -36,6 +40,10 @@ body{
         color: white;
         font-family:Shrikhand;
         margin: 0px;
+        @media (min-width:786px){
+            position: absolute;
+            right: 40px;
+        }
     }
     &__listes{
         display: flex;
@@ -43,6 +51,11 @@ body{
         gap: 7px;
         list-style:none;
         padding: 0px;
+        @media (min-width:786px){
+            display: flex;
+            flex-direction: row;
+            gap:20px;
+        }
     }
     &__liste{
         color: white;
