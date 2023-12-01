@@ -6,17 +6,31 @@ body {
 .header {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 20px;
-  width: 100%;
+  padding-bottom: 20px;
   box-shadow: 2px 0px 1px rgba(0, 0, 0, 0.15);
+  width: 100%;
 }
 .header__logo {
   position: relative;
+}
+.header__fleche {
+  position: absolute;
+  left: 1px;
+  margin-left: 10px;
+  color: #353535;
 }
 
 .footer {
   background-color: #353535;
   padding: 25px;
+}
+@media (min-width: 786px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
 }
 .footer__titre {
   font-size: 18px;
@@ -26,12 +40,25 @@ body {
   font-family: Shrikhand;
   margin: 0px;
 }
+@media (min-width: 786px) {
+  .footer__titre {
+    position: absolute;
+    right: 40px;
+  }
+}
 .footer__listes {
   display: flex;
   flex-direction: column;
   gap: 7px;
   list-style: none;
   padding: 0px;
+}
+@media (min-width: 786px) {
+  .footer__listes {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
 }
 .footer__liste {
   color: white;
@@ -121,6 +148,11 @@ body {
   font-size: 24px;
   font-weight: 700;
 }
+@media (min-width: 786px) {
+  .Fonctionnement__titre {
+    padding-left: 90px;
+  }
+}
 .Fonctionnement__listes {
   display: flex;
   flex-direction: column;
@@ -130,6 +162,13 @@ body {
   list-style: none;
   counter-reset: compteListe;
 }
+@media (min-width: 786px) {
+  .Fonctionnement__listes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 .Fonctionnement__liste {
   display: flex;
   padding: 10px;
@@ -137,6 +176,11 @@ body {
   border-radius: 20px;
   background-color: #f6f6f6;
   position: relative;
+}
+@media (min-width: 786px) {
+  .Fonctionnement__liste {
+    width: 25%;
+  }
 }
 .Fonctionnement__texte {
   font-size: 16px;
@@ -147,12 +191,31 @@ body {
   margin: 15px;
   color: #7E7E7E;
 }
+.Fonctionnement__number {
+  background-color: #9356DC;
+  color: #FFFFFF;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -11px;
+}
 
 .container {
   display: flex;
   flex-direction: column;
   padding: 20px;
   gap: 20px;
+}
+@media (min-width: 786px) {
+  .container {
+    padding: 40px;
+  }
 }
 
 #purple {
@@ -166,7 +229,20 @@ body {
 .restaurant__titre {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 0px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.restaurant__cartes {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+@media (min-width: 786px) {
+  .restaurant__cartes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .cartes {
@@ -198,6 +274,20 @@ body {
   position: absolute;
   margin-top: 15px;
   right: 30px;
+}
+@media (min-width: 786px) {
+  .carte__badge {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #99E2D0;
+    color: #008766;
+    padding: 5px;
+    position: absolute;
+    margin-top: 15px;
+    right: 30px;
+  }
 }
 .carte__contenu {
   padding: 10px;
@@ -234,12 +324,26 @@ body {
 .imagerestaurant {
   width: 100%;
 }
+@media (min-width: 786px) {
+  .imagerestaurant {
+    width: 100%;
+    height: 380px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 
 .menu {
   background-color: #F6F6F6;
   border-radius: 40px 40px 0px 0px;
   position: relative;
   margin-top: -50px;
+}
+@media (min-width: 786px) {
+  .menu {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
 }
 .menu__titre {
   font-size: 24px;
@@ -250,6 +354,12 @@ body {
 .menu__listes {
   display: flex;
   justify-content: space-between;
+}
+@media (min-width: 786px) {
+  .menu__listes {
+    display: flex;
+    justify-content: center;
+  }
 }
 .menu__btn {
   background-color: transparent;
@@ -263,9 +373,21 @@ body {
   flex-direction: column;
   gap: 15px;
 }
+@media (min-width: 786px) {
+  .sousmenu {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
 .sousmenu__titre {
   font-size: 16px;
   font-weight: 300;
+  border: 3px solid #99E2D0;
+  width: 40px;
+  border-top-color: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  padding-bottom: 5px;
 }
 
 .menudetail {
