@@ -357,6 +357,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: black;
 }
 .carte:active {
   box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.25);
@@ -412,7 +413,9 @@ body {
 .menu__btn--fullheart {
   position: absolute;
   opacity: 0;
-  color: #9747FF;
+  color: transparent;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
 }
 .menu__btn--fullheart:hover {
   animation-name: heart;

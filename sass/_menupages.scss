@@ -39,12 +39,13 @@
         &--fullheart{
            position: absolute;
            opacity: 0;
-           color: #9747FF;
+           color: transparent;
+           background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+           -webkit-background-clip: text;
           &:hover{
             animation-name: heart;
             animation-duration: 2s;
             animation-fill-mode: forwards;
-            animation-direction:alternate-reverse;
           }
         }
         &--emptyheart{
