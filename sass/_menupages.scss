@@ -44,6 +44,7 @@
             animation-name: heart;
             animation-duration: 2s;
             animation-fill-mode: forwards;
+            animation-direction:alternate-reverse;
           }
         }
         &--emptyheart{
