@@ -1,3 +1,44 @@
+.loader{
+    background-color: #FFFFFF;
+    opacity: 0.7;
+    position: fixed;
+    inset: 0px;
+    z-index: 1;
+    animation-name: disparu;
+    animation-duration: 200ms;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    &__cercle{
+   border: 10px solid #f3f3f3; 
+   border-bottom:10px solid #9356DC;
+   border-top: 10px solid #9356DC;
+   border-radius: 50%;
+   width: 100px;
+   height: 100px;
+   margin: auto;
+   inset: 0;
+   position: absolute;
+   animation: spin linear infinite ;
+   animation-duration: 3s;
+   } 
+}
+@keyframes disparu{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
 .localisation{
     display: flex;
     justify-content: center;

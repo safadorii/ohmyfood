@@ -35,8 +35,30 @@
         border: transparent 0px solid;
         padding: 20px;
         cursor: pointer;
+        font-size: 26px;
+        &--fullheart{
+           position: absolute;
+           opacity: 0;
+           color: #9747FF;
+          &:hover{
+            animation-name: heart;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+          }
+        }
+        &--emptyheart{
+          position: absolute;
+        }
     }
+}
 
+@keyframes heart{
+  0%{
+    opacity: 0;
+  }
+  100%{
+     opacity: 1;
+  }
 }
 .sousmenu{
     display: flex;
