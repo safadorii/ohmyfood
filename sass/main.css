@@ -601,6 +601,18 @@ body {
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
+.menudetail:hover .menudetail__titre {
+  width: 75%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menudetail:hover .menudetail__description {
+  width: 75%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 
 .contenu {
   position: relative;

@@ -224,6 +224,18 @@
     animation-fill-mode: forwards;
     
   }
+  &:hover .menudetail__titre {
+    width: 75%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  &:hover .menudetail__description{
+    width: 75%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
 }
 .contenu{
   position: relative;
