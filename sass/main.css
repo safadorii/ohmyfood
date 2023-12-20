@@ -273,22 +273,37 @@ body {
   padding-left: 20px;
   padding-top: 20px;
 }
+@media (min-width: 1024px) {
+  .restaurant__titre {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .restaurant__cartes {
   display: flex;
   flex-direction: column;
   padding: 20px;
   gap: 20px;
 }
-@media (min-width: 786px) {
+@media (min-width: 768px) {
   .restaurant__cartes {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant__cartes {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
 .cartes {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .carte {
