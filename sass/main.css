@@ -29,6 +29,11 @@ body {
 @media (min-width: 768px) {
   .footer {
     display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
     justify-content: center;
   }
 }
@@ -44,6 +49,7 @@ body {
   .footer__titre {
     position: absolute;
     right: 40px;
+    margin-top: 25px;
   }
 }
 .footer__listes {
@@ -58,6 +64,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    margin-top: 30px;
   }
 }
 .footer__liste {
@@ -189,16 +196,11 @@ body {
   font-size: 24px;
   font-weight: 700;
 }
-@media (min-width: 786px) {
-  .Fonctionnement__titre {
-    padding-left: 90px;
-  }
-}
 .Fonctionnement__listes {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 0px;
+  padding-left: 10px;
   margin: 0px;
   list-style: none;
   counter-reset: compteListe;
@@ -207,7 +209,6 @@ body {
   .Fonctionnement__listes {
     display: flex;
     flex-direction: row;
-    justify-content: center;
   }
 }
 .Fonctionnement__liste {
@@ -220,13 +221,15 @@ body {
 }
 @media (min-width: 786px) {
   .Fonctionnement__liste {
-    width: 25%;
+    white-space: nowrap;
+    width: 30%;
   }
 }
 .Fonctionnement__texte {
   font-size: 16px;
   font-weight: 500;
-  padding: 15px;
+  padding-top: 15px;
+  padding-right: 40px;
 }
 .Fonctionnement__icone {
   margin: 15px;
@@ -258,6 +261,12 @@ body {
     padding: 40px;
   }
 }
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
 
 #purple {
   color: #9356DC;
@@ -267,6 +276,18 @@ body {
   margin-top: 40px;
   background-color: #F6F6F6;
 }
+@media (min-width: 768px) {
+  .restaurant {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant {
+    padding-left: 95px;
+    padding-right: 95px;
+  }
+}
 .restaurant__titre {
   font-size: 24px;
   font-weight: 700;
@@ -275,9 +296,15 @@ body {
 }
 @media (min-width: 1024px) {
   .restaurant__titre {
-    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media (min-width: 768px) {
+  .restaurant__titre {
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 20px;
   }
 }
 .restaurant__cartes {
@@ -294,7 +321,6 @@ body {
 }
 @media (min-width: 1024px) {
   .restaurant__cartes {
-    max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -424,7 +450,7 @@ body {
 .menu__btn {
   background-color: transparent;
   border: transparent 0px solid;
-  padding: 20px;
+  padding: 24px;
   cursor: pointer;
   font-size: 26px;
 }
@@ -468,12 +494,6 @@ body {
     padding-right: 0px;
   }
 }
-@media (min-width: 1024px) {
-  .sousmenu-1 {
-    padding-left: 200px;
-    padding-right: 200px;
-  }
-}
 .sousmenu-1__titre {
   font-size: 16px;
   font-weight: 300;
@@ -509,12 +529,6 @@ body {
     padding-right: 0px;
   }
 }
-@media (min-width: 1024px) {
-  .sousmenu-2 {
-    padding-left: 200px;
-    padding-right: 200px;
-  }
-}
 .sousmenu-2__titre {
   font-size: 16px;
   font-weight: 300;
@@ -548,12 +562,6 @@ body {
   .sousmenu-3 {
     padding-left: 0px;
     padding-right: 0px;
-  }
-}
-@media (min-width: 1024px) {
-  .sousmenu-3 {
-    padding-left: 200px;
-    padding-right: 200px;
   }
 }
 .sousmenu-3__titre {
@@ -597,18 +605,21 @@ body {
   font-size: 18px;
   font-weight: 500;
   margin: 0px;
+  white-space: nowrap;
 }
 .menudetail__description {
   font-size: 15px;
   font-weight: 300;
   margin-top: 5px;
   margin-bottom: 0px;
+  white-space: nowrap;
 }
 .menudetail__prix {
   font-weight: bold;
   display: flex;
   align-items: flex-end;
   padding-right: 15px;
+  margin-top: 25px;
 }
 .menudetail__check {
   background-color: #99E2D0;
@@ -617,9 +628,8 @@ body {
   border-radius: 0px 13px 13px 0px;
   padding: 20px;
   opacity: 1;
-  right: 0px;
-  bottom: -22px;
-  top: -22px;
+  right: -1px;
+  top: -10px;
   transform: translateX(70px);
 }
 .menudetail__check--cercle {
