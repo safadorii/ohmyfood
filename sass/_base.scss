@@ -1,4 +1,6 @@
-
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -23,7 +25,7 @@ body{
 } 
 @mixin button{
    
-    background: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(0deg, $color-primary -11.44%, $color-secondary 123.93%);
     padding: 15px;
     border: #9747FF;
     top: 50px;
@@ -32,7 +34,7 @@ body{
     cursor: pointer;
 &:hover{ 
     box-shadow: 0px 4px 10px 0px #00000080;
-    background:linear-gradient(0deg, #9356DC -11.44%, #FF79DA 90.93%);
+    background:linear-gradient(0deg, $color-primary -11.44%, #FF79DA 90.93%);
 }    
 }
 .footer{
